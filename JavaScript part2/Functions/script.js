@@ -1,23 +1,21 @@
-const now = 2037;
-const ageEttiene = now - 2001;
-const ageSue = now - 1998;
-console.log(ageEttiene,ageSue);
-console.log(ageEttiene * 2,ageEttiene / 2)
+'use strict'
 
-const firstName='Ettiene';
-const lastName = 'Ludick'
+function logger() {
+console.log('My name is Ettiene');
+}
+// calling / running / invoking
+logger();
+logger();
+logger();
 
-console.log(firstName+' '+lastName);
+function fruitprocessor(apples, organges){
+    const juice =`Juice with ${apples} apples and ${organges} organges`;
+    return juice
+}
 
-//Assignment operators
-let x = 10 + 5;
-x += 10;
-x *= 4;
-x++;
-x--;
-x--;
-console.log(x);
+const Applesjuice= fruitprocessor(5,0);
+console.log(Applesjuice);
 
-//Comparison
-console.log( ageEttiene>ageSue);
+const appleOrgangJuice = fruitprocessor(2,4);
+console.log(appleOrgangJuice);
 

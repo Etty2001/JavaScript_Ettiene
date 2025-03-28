@@ -1,23 +1,16 @@
-const now = 2037;
-const ageEttiene = now - 2001;
-const ageSue = now - 1998;
-console.log(ageEttiene,ageSue);
-console.log(ageEttiene * 2,ageEttiene / 2)
+const age = 18;
+age>=18 ? console.log('I like to dink wine') :
+console.log(' I like to drink water');
 
-const firstName='Ettiene';
-const lastName = 'Ludick'
+const drink= age >= 18 ? 'wine' : 'water';
+console.log(drink);
 
-console.log(firstName+' '+lastName);
+ let drink2;
+if(age >=18){
+    drink2 = 'wine';
+}else{
+    drink2 = "water";
+}
+console.log(drink2);
 
-//Assignment operators
-let x = 10 + 5;
-x += 10;
-x *= 4;
-x++;
-x--;
-x--;
-console.log(x);
-
-//Comparison
-console.log( ageEttiene>ageSue);
 

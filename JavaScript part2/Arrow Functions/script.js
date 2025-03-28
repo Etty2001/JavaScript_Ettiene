@@ -1,23 +1,32 @@
-const now = 2037;
-const ageEttiene = now - 2001;
-const ageSue = now - 1998;
-console.log(ageEttiene,ageSue);
-console.log(ageEttiene * 2,ageEttiene / 2)
+//Funtion Decarations
+function caklcAge1(birthYear){
+    return 2037 - birthYear
+}
 
-const firstName='Ettiene';
-const lastName = 'Ludick'
+const age1= caklcAge1(2001);
 
-console.log(firstName+' '+lastName);
+//Funtion expresoins 
 
-//Assignment operators
-let x = 10 + 5;
-x += 10;
-x *= 4;
-x++;
-x--;
-x--;
-console.log(x);
+const calcAge2 = function(birthYear){
+    return 2037- birthYear;
+}
+const age2= calcAge2(1994)
+console.log(age1,age2);
 
-//Comparison
-console.log( ageEttiene>ageSue);
+//arrow funtions
+const calcAge3 = birthYear=> 2037- birthYear;
+const age3 = calcAge3(1994);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName)=> {
+    const age= 2037 - birthYear
+    const retirement = 65 - age
+    return `${firstName} retires in ${retirement} years`
+} 
+ console.log(yearsUntilRetirement(2001, 'Ettiene'));
+ console.log(yearsUntilRetirement(1987, 'Derrick'));
+
+
+
+
 
